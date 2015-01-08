@@ -1,4 +1,5 @@
 #/bin/bash
+#@uthor: dave
 
 avr-gcc -mmcu=atmega8 -Os $1 -o obj.o
 avr-objcopy -j .text -j .data -O ihex  obj.o hx.hex
